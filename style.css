@@ -1,3 +1,7 @@
+body {
+    width: 940px;
+}
+
 .bg {
     height: 600px;
     background-image: url(assets/bg-1.jpg);
