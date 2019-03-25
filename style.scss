@@ -1,0 +1,247 @@
+body {
+    width: 940px;
+}
+
+.bg {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-panel {
+    height: 100%;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-list-container {
+    opacity: .8;
+    background-color: black;
+    height: 80%;
+}
+
+.game-list {
+    height: 100%;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+    margin: 0;
+}
+
+.game-list:hover {
+    overflow-y: scroll;
+}
+
+.game-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.game-list::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.game-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.game-list li a {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 10px 20px;
+    border-bottom: 2px solid #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.game-list li a.selected {
+    color: black;
+    background-color: white;
+    position: relative;
+}
+
+.launcher-details {
+    height: 20%;
+    background-color: #212121;
+    text-align: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.launcher-details-text span {
+    color: #fff;
+    display: block;
+    padding-top: 20px;
+}
+
+.launcher-details-text a {
+    color: #fff;
+}
+
+.launcher-title {
+    font-size: 18px;
+}
+
+.main-panel {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.content-news {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-news>h2 {
+    background-color: #333;
+    opacity: 0.6;
+}
+
+.article {
+    background-color: #fff;
+    width: 200px;
+    box-shadow: 0px 0px 8px 1px #333;
+    margin-right: 15px;
+}
+
+.article:last-child {
+    margin-right: 0;
+}
+
+.article h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+.article figure {
+    max-width: 100%;
+    max-height: 100px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.article figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.article p {
+    margin: 0;
+    padding: 10px;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article a {
+    color: #333;
+    margin: 0;
+    display: block;
+    padding: 10px;
+}
+
+.play-section {
+    background-color: rgba(51, 51, 51, 0.6);
+    padding: 30px;
+    text-align: center;
+}
+
+.btn-p {
+    color: #fff;
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+    padding: 10px 40px;
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px 2px #0e6453;
+}
+
+.btn-s {
+    color: #333;
+    border: none;
+    background-color: transparent;
+    margin: auto 5px;
+    font-size: 26px;
+    cursor: pointer;
+    height: max-content;
+    width: max-content;
+}
+
+.game-details {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game-details-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-details h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.downloading {
+    font-size: 12px;
+}
+
+.btn-disabled {
+    color: #fff;
+    opacity: 0.8;
+    background-color: rgba(173, 173, 173);
+    border: 2px solid rgba(173, 173, 173);
+    padding: 10px 40px;
+    margin: 5px;
+    font-size: 30px;
+    cursor: default;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px 2px #333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #0e6453;
+    border-radius: 20px;
+    position: relative;
+}
+
+.progress-bar-per {
+    width: 30%;
+    height: 12px;
+    background-color: #1abc9c;
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+.play-section p {
+    margin: 0;
+    color: #fff;
+    margin: 5px;
+}
